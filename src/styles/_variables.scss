@@ -1,0 +1,23 @@
+:root {
+  --bg-white: #ffffff;
+  --bg-cream: #ebeade;
+  --bg-black-60: #00000099;
+  --bg-black-15: #00000026;
+
+  --text-white: #ffffff;
+  --text-grey: #2e2e2e;
+  --text-black: #000000;
+
+  --border-white: #ffffff;
+  --border-grey: #e4e4e4;
+  --border-black: #000000;
+}
+
+@font-face {
+  font-family: josfin;
+  src: url(../../public/fonts/josefinsans.woff2);
+}
+@font-face {
+  font-family: josfin-regular;
+  src: url(../../public/fonts/josefinsans_regular.woff2);
+}

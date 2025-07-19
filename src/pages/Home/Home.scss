@@ -1,0 +1,144 @@
+@import "../../styles/variables";
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5rem;
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.home-section-2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 2.5rem;
+  margin-bottom: 5rem;
+  .left {
+    width: 50%;
+    position: relative;
+    img {
+      width: 100%;
+      object-fit: cover;
+      position: sticky;
+      top: 2rem;
+    }
+  }
+  .right {
+    width: 50%;
+    h1 {
+      margin-bottom: 2rem;
+      font-family: josfin;
+      font-weight: 100;
+      font-size: 2rem;
+    }
+
+    .section-2-right-images-div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .section-2-right-image {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 100%;
+        p {
+          font-size: 1.2rem;
+          font-weight: 200;
+          font-family: josfin-regular;
+
+          color: var(--primary-color);
+          padding-bottom: 0.5rem;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.561);
+        }
+        img {
+          width: 35%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+.home-section-3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 5rem;
+
+  .home-section-3-card {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    h1 {
+      font-family: josfin;
+      font-size: 1.7rem;
+      font-weight: 100;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-family: josfin-regular;
+      font-size: 0.9rem;
+      color: var(--text-grey);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.561);
+      padding-bottom: 0.5rem;
+    }
+  }
+}
+
+.home-section-4 {
+  width: 100%;
+  background: url("./images/11.webp");
+  background-size: cover;
+  height: 80vh;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+  .home-section-2 {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    .left,
+    .right {
+      width: 100%;
+    }
+    .left img {
+      position: relative;
+      top: 0;
+    }
+  }
+
+  .home-section-3 {
+    width: 100%;
+    flex-direction: column;
+  }
+}
