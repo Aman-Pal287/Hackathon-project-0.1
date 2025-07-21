@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.footer {
+  width: 100%;
+  height: 500px;
+  background-color: var(--bg-cream);
+  padding: 2rem 5rem;
+  font-family: josfin-regular;
+
+  .footer-top {
+    display: flex;
+    gap: 5rem;
+    
+  }
+}

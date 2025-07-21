@@ -14,10 +14,7 @@ const Home = () => {
   return (
     <div>
       <section className="hero-section">
-        <img
-          src="https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg"
-          alt=""
-        />
+        <img src={img02} alt="" />
       </section>
 
       <section className="home-section-2">
@@ -70,9 +67,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="home-section-4">
-        
-      </section>
+      <section className="home-section-4"></section>
     </div>
   );
 };
