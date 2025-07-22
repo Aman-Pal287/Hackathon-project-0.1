@@ -1,49 +1,53 @@
 import "./Footer.scss";
+import logo from "../../../public/logo/new_footer_fake_logo.png"; // Assuming you have a logo image
 
 const Footer = () => {
   return (
     <>
       <section className="footer">
         <div className="footer-top">
-          <div className="footer-top-company">
+          <div className="footer-top-company footer-top-item">
             <h1>Company</h1>
             <ul>
-              <li>Our Story</li>
-              <li>Editorial Journal</li>
-              <li>Press</li>
-              <li>Collaborations</li>
+              <p>Our Story</p>
+              <p>Editorial Journal</p>
+              <p>Press</p>
+              <p>Collaborations</p>
             </ul>
           </div>
 
-          <div className="footer-top-help">
+          <div className="footer-top-help footer-top-item">
             <h1>Help</h1>
             <ul>
-              <li>Contact Us</li>
-              <li>Track Your Order</li>
-              <li>FAQ's</li>
-              <li>Delivery and Returns</li>
-              <li>Size Guide</li>
+              <p>Contact Us</p>
+              <p>Track Your Order</p>
+              <p>FAQ's</p>
+              <p>Depvery and Returns</p>
+              <p>Size Guide</p>
             </ul>
           </div>
 
-          <div className="footer-top-legal">
+          <div className="footer-top-legal footer-top-item">
             <h1>Legal</h1>
             <ul>
-              <li>Privacy Policy</li>
-              <li>Terms and Conditions</li>
+              <p>Privacy Popcy</p>
+              <p>Terms and Conditions</p>
             </ul>
           </div>
 
-          <div className="footer-top-social">
+          <div className="footer-top-social footer-top-item">
             <h1>Social</h1>
             <ul>
-              <li>Instagram</li>
-              <li>Facebook</li>
-              <li>Youtube</li>
+              <p>Instagram</p>
+              <p>Facebook</p>
+              <p>Youtube</p>
             </ul>
           </div>
         </div>
-        <div className="footer-bottom"></div>
+        <div className="footer-bottom">
+          <img src={logo} alt="" />
+          <h1>Copyright NOUSHELLA</h1>
+        </div>
       </section>
     </>
   );
