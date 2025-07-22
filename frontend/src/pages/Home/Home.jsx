@@ -1,6 +1,6 @@
 import "./Home.scss";
 import img01 from "./images/01.jpeg";
-import img02 from "./images/02.jpeg";
+
 import img03 from "./images/03.jpg";
 import img04 from "./images/04.jpg";
 import img05 from "./images/05.jpg";
@@ -9,12 +9,13 @@ import img07 from "./images/07.jpg";
 import img08 from "./images/08.jpg";
 import img09 from "./images/09.webp";
 import img10 from "./images/10.webp";
+import heroVideo from "../../../public/hero_video/hero_video.mp4";
 
 const Home = () => {
   return (
     <div>
       <section className="hero-section">
-        <img src={img02} alt="" />
+        <video src={heroVideo} autoPlay muted loop></video>
       </section>
 
       <section className="home-section-2">
@@ -67,7 +68,19 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="home-section-4"></section>
+      <section className="home-section-4">
+        <form className="home-section-4-form">
+          <h1>
+            Sign up to keep up to date with <br /> NOUSHELLA!
+          </h1>
+          <p>
+            Dive into your unique style, sans pretense and without <br />{" "}
+            conformity and experience NOUSHELLA.
+          </p>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
     </div>
   );
 };

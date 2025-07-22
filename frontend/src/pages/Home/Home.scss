@@ -4,7 +4,8 @@
   position: relative;
   width: 100%;
   margin-bottom: 5rem;
-  img {
+
+  video {
     width: 100%;
     height: 100vh;
     object-fit: cover;
@@ -18,9 +19,11 @@
   justify-content: space-between;
   padding: 0rem 2.5rem;
   margin-bottom: 5rem;
+
   .left {
     width: 50%;
     position: relative;
+
     img {
       width: 100%;
       object-fit: cover;
@@ -28,8 +31,10 @@
       top: 2rem;
     }
   }
+
   .right {
     width: 50%;
+
     h1 {
       margin-bottom: 2rem;
       font-family: josfin;
@@ -48,6 +53,7 @@
         align-items: flex-start;
         gap: 1rem;
         width: 100%;
+
         p {
           font-size: 1.2rem;
           font-weight: 200;
@@ -57,6 +63,7 @@
           padding-bottom: 0.5rem;
           border-bottom: 1px solid rgba(0, 0, 0, 0.561);
         }
+
         img {
           width: 35%;
           object-fit: contain;
@@ -112,25 +119,81 @@
   background: url("./images/11.webp");
   background-size: cover;
   height: 80vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 5rem;
+
+
+  .home-section-4-form {
+
+    // margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+
+    h1 {
+      font-size: 1.5rem;
+      font-family: josfin-regular;
+      font-weight: 100;
+    }
+
+    p {
+      font-size: 1rem;
+      font-family: josfin-thin;
+      margin-bottom: 1rem;
+      font-weight: 700;
+
+    }
+
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 0.25rem;
+      margin-bottom: 1rem;
+      background: transparent;
+      outline: none;
+      padding: 1rem;
+      border: 1px solid white;
+      color: white;
+      font-size: 1rem;
+    }
+
+    input::placeholder {
+      color: white;
+    }
+
+    button {
+      width: 100%;
+      padding: 1rem 1rem;
+    }
+
+  }
 }
 
 @media (max-width: 768px) {
   .hero-section {
     width: 100%;
+
     img {
       width: 100%;
       height: 100vh;
       object-fit: cover;
     }
   }
+
   .home-section-2 {
     flex-direction: column;
     flex-direction: column-reverse;
     gap: 2rem;
+
     .left,
     .right {
       width: 100%;
     }
+
     .left img {
       position: relative;
       top: 0;
@@ -140,5 +203,65 @@
   .home-section-3 {
     width: 100%;
     flex-direction: column;
+  }
+
+
+  .home-section-4 {
+    width: 100%;
+    background: url("./images/11.webp");
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 1rem;
+
+
+    .home-section-4-form {
+
+      // margin-left: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 1.5rem;
+
+      h1 {
+        font-size: 1.5rem;
+        font-family: josfin-regular;
+        font-weight: 100;
+      }
+
+      p {
+        font-size: 1rem;
+        font-family: josfin-thin;
+        margin-bottom: 1rem;
+        font-weight: 700;
+
+      }
+
+      input {
+        width: 100%;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 0.25rem;
+        margin-bottom: 1rem;
+        background: transparent;
+        outline: none;
+        padding: 1rem;
+        border: 1px solid white;
+        color: white;
+        font-size: 1rem;
+      }
+
+      input::placeholder {
+        color: white;
+      }
+
+      button {
+        width: 100%;
+        padding: 1rem 1rem;
+      }
+
+    }
   }
 }
