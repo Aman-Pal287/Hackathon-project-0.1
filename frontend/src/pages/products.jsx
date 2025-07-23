@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { asyncupdateuser } from "../store/actions/userActions";
 import "./Products.css/Products.scss";
+import { useEffect } from "react";
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -38,7 +39,12 @@ const Products = () => {
         </Link>
       </div>
     );
-    
+  });
+
+  useEffect(() => {
+    const navBar = document.querySelector(".custom-navbar");
+    navBar.style.backgroundColor = `var(--bg-cream)`;
+    navBar.style.color = `var(--text-dark)`;
   });
 
   return products.length > 0 ? (
