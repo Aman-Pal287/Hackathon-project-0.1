@@ -71,7 +71,7 @@ const Home = () => {
       <section className="home-section-4">
         <form className="home-section-4-form">
           <h1>
-            Sign up to keep up to date with <br /> NOUSHELLA!
+            Sign up to keep up to date with <br /> KStyle Studio!
           </h1>
           <p>
             Dive into your unique style, sans pretense and without <br />{" "}

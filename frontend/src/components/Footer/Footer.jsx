@@ -1,5 +1,5 @@
 import "./Footer.scss";
-import logo from "../../../public/logo/new_footer_fake_logo.png"; // Assuming you have a logo image
+import logo from "../../../public/logo/footer_logo_FINAL.webp"; // Assuming you have a logo image
 
 const Footer = () => {
   return (

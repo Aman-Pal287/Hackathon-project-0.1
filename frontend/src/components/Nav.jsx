@@ -7,46 +7,52 @@ const Nav = () => {
 
   return (
     <nav className="custom-navbar">
-      <NavLink
-        to="/home"
-        className={({ isActive }) => (isActive ? "active" : "")}
-      >
-        Home
-      </NavLink>
-      <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
-        Products
-      </NavLink>
-      {user ? (
-        <>
-          {user?.isAdmin && (
-            <NavLink
-              to="/admin/create-product"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              Create Product
-            </NavLink>
-          )}
-          <NavLink
-            to="/admin/user-profile"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Settings
-          </NavLink>
-          <NavLink
-            to="/cart"
-            className={({ isActive }) => (isActive ? "active" : "")}
-          >
-            Cart
-          </NavLink>
-        </>
-      ) : (
+      <h1>KStyle Studio</h1>
+      <div className="nav-links">
         <NavLink
-          to="/login"
+          to="/home"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
-          Login
+          Home
         </NavLink>
-      )}
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Products
+        </NavLink>
+        {user ? (
+          <>
+            {user?.isAdmin && (
+              <NavLink
+                to="/admin/create-product"
+                className={({ isActive }) => (isActive ? "active" : "")}
+              >
+                Create Product
+              </NavLink>
+            )}
+            <NavLink
+              to="/admin/user-profile"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Settings
+            </NavLink>
+            <NavLink
+              to="/cart"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Cart
+            </NavLink>
+          </>
+        ) : (
+          <NavLink
+            to="/login"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Login
+          </NavLink>
+        )}
+      </div>
     </nav>
   );
 };
