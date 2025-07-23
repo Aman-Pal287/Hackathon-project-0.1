@@ -41,11 +41,11 @@ const Products = () => {
     );
   });
 
-  useEffect(() => {
-    const navBar = document.querySelector(".custom-navbar");
-    navBar.style.backgroundColor = `var(--bg-cream)`;
-    navBar.style.color = `var(--text-dark)`;
-  });
+  // useEffect(() => {
+  //   const navBar = document.querySelector(".custom-navbar");
+  //   navBar.style.backgroundColor = `var(--bg-cream)`;
+  //   navBar.style.color = `var(--text-dark)`;
+  // });
 
   return products.length > 0 ? (
     <div className="products-container">{rederproduct}</div>

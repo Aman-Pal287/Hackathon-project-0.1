@@ -1,0 +1,59 @@
+@import "../styles/variables.scss";
+
+.register-container {
+    width: 100%;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .register-container-form {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+        align-items: center;
+
+
+        h1 {
+            font: 1.5rem;
+            font-family: josfin-regular;
+        }
+
+        input {
+            width: 100%;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid var(--border-grey);
+            font-family: josfin-regular;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 1rem 0;
+            outline: none;
+            border-style: none;
+            background-color: var(--bg-cream);
+            font-size: 1.2rem;
+            font-family: josfin-regular;
+        }
+
+        button:hover {
+            background-color: #d2d1c6;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-family: josfin-regular;
+        }
+
+        Link {
+            font-size: 1.2rem;
+            font-family: josfin-regular;
+        }
+    }
+}
