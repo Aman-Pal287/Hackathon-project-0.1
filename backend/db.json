@@ -9,28 +9,6 @@
       "cart": [
         {
           "product": {
-            "id": "2",
-            "title": "Urban Streetwear Hoodie",
-            "price": 1799,
-            "description": "Comfortable and stylish hoodie for daily wear.",
-            "category": "clothes",
-            "image": "https://images.unsplash.com/photo-1619808799783-db68de98fbe0"
-          },
-          "quantity": 1
-        },
-        {
-          "product": {
-            "id": "16",
-            "title": "Flowy Maxi Dress",
-            "price": 2399,
-            "description": "Breezy full-length dress for summer days.",
-            "category": "clothes",
-            "image": "https://images.unsplash.com/photo-1591369822096-ffd140ec948f"
-          },
-          "quantity": 10
-        },
-        {
-          "product": {
             "id": "17",
             "title": "High Contrast Fashion",
             "price": 2199,
@@ -38,7 +16,7 @@
             "category": "clothes",
             "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
           },
-          "quantity": 3
+          "quantity": 4
         }
       ]
     },
@@ -161,60 +139,12 @@
       "image": "https://images.unsplash.com/photo-1654512697681-8434b50096dd"
     },
     {
-      "id": "14",
-      "title": "Layered Vintage Look",
-      "price": 1899,
-      "description": "Old school fashion with a modern twist.",
-      "category": "clothes",
-      "image": "https://images.unsplash.com/photo-1654512697655-b2899afacae5"
-    },
-    {
       "id": "15",
       "title": "Classy Silk Shirt",
       "price": 2699,
       "description": "Elegant and lightweight for luxury wear.",
       "category": "clothes",
       "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157"
-    },
-    {
-      "id": "16",
-      "title": "Flowy Maxi Dress",
-      "price": 2399,
-      "description": "Breezy full-length dress for summer days.",
-      "category": "clothes",
-      "image": "https://images.unsplash.com/photo-1591369822096-ffd140ec948f"
-    },
-    {
-      "id": "17",
-      "title": "High Contrast Fashion",
-      "price": 2199,
-      "description": "Sharp color combination for bold looks.",
-      "category": "clothes",
-      "image": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"
-    },
-    {
-      "id": "18",
-      "title": "Premium Lifestyle Pose",
-      "price": 2599,
-      "description": "Perfect balance of fashion and attitude.",
-      "category": "clothes",
-      "image": "https://plus.unsplash.com/premium_photo-1723489317107-670cdf3c4a65"
-    },
-    {
-      "id": "19",
-      "title": "Oversized Street Jacket",
-      "price": 1899,
-      "description": "The ultimate cool-season street look.",
-      "category": "clothes",
-      "image": "https://images.unsplash.com/photo-1708523842501-800cd1c7505e"
-    },
-    {
-      "id": "20",
-      "title": "Modern Minimalist Fashion",
-      "price": 1999,
-      "description": "Clean lines, confident look.",
-      "category": "clothes",
-      "image": "https://plus.unsplash.com/premium_photo-1747664078873-948da598ad2c"
     }
   ]
 }
