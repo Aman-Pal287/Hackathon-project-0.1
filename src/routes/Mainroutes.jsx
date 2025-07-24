@@ -10,10 +10,12 @@ const PageNotFound = lazy(() => import("../pages/PageNotFound"));
 const Cart = lazy(() => import("../pages/Cart"));
 const Home = lazy(() => import("../pages/Home/Home"));
 import AuthWrapper from "./AuthWrapper";
+import About from "../pages/About";
 const Mainroutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
       <Route path="/products" element={<Products />} />
 
       <Route path="/login" element={<Login />} />
