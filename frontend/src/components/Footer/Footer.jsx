@@ -20,7 +20,7 @@ const Footer = () => {
             <h1>Help</h1>
             <ul>
               <p>Contact Us</p>
-              <p>Track Your Order</p>
+              <p>Track Your Order</p> 
               <p>FAQ's</p>
               <p>Depvery and Returns</p>
               <p>Size Guide</p>

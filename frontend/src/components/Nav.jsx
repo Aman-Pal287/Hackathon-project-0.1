@@ -10,13 +10,13 @@ const Nav = () => {
       <h1>KStyle Studio</h1>
       <div className="nav-links">
         <NavLink
-          to="/home"
+          to="/"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           Home
         </NavLink>
         <NavLink
-          to="/"
+          to="/products"
           className={({ isActive }) => (isActive ? "active" : "")}
         >
           Products

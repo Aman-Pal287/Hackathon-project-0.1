@@ -1,0 +1,90 @@
+[
+  {
+    "id": "2",
+    "title": "Urban Streetwear Hoodie",
+    "price": 1799,
+    "description": "Comfortable and stylish hoodie for daily wear.",
+    "category": "clothes",
+    "image": "https://images.unsplash.com/photo-1619808799783-db68de98fbe0"
+  },
+  {
+    "id": "5",
+    "title": "Black and White Fashion Shot",
+    "price": 1599,
+    "description": "Timeless black-and-white formal outfit.",
+    "category": "clothes",
+    "image": "https://images.unsplash.com/photo-1495121605193-b116b5b9c5fe"
+  },
+  {
+    "id": "6",
+    "title": "Premium Denim Jacket",
+    "price": 2299,
+    "description": "Bold premium style for urban wear.",
+    "category": "clothes",
+    "image": "https://plus.unsplash.com/premium_photo-1679920026560-000496ff9e8b"
+  },
+  {
+    "id": "7",
+    "title": "Fall Fashion Layered Look",
+    "price": 1899,
+    "description": "Perfect blend of colors and texture.",
+    "category": "clothes",
+    "image": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f"
+  },
+  {
+    "id": "8",
+    "title": "Oversized Sweater Vibe",
+    "price": 1399,
+    "description": "Comfy oversized sweater to keep you cozy.",
+    "category": "clothes",
+    "image": "https://images.unsplash.com/photo-1683849117195-83517b362436"
+  },
+  {
+    "id": "9",
+    "title": "Pastel Coat Elegance",
+    "price": 1999,
+    "description": "Statement piece for a polished look.",
+    "category": "clothes",
+    "image": "https://images.unsplash.com/photo-1506629082955-511b1aa562c8"
+  },
+  {
+    "id": "10",
+    "title": "Minimal Shirt Styling",
+    "price": 1199,
+    "description": "Simple and clean outfit for modern looks.",
+    "category": "clothes",
+    "image": "https://images.unsplash.com/photo-1503341504253-dff4815485f1"
+  },
+  {
+    "id": "11",
+    "title": "Long Trench Coat",
+    "price": 2499,
+    "description": "Iconic trench coat in warm fabric.",
+    "category": "clothes",
+    "image": "https://images.unsplash.com/photo-1603344797033-f0f4f587ab60"
+  },
+  {
+    "id": "12",
+    "title": "Earth Tone Casual",
+    "price": 1699,
+    "description": "Nature-inspired cozy streetwear look.",
+    "category": "clothes",
+    "image": "https://images.unsplash.com/photo-1632469188022-b5db09a70fbc"
+  },
+  {
+    "id": "13",
+    "title": "Brown Tonal Jacket",
+    "price": 1799,
+    "description": "Perfect blend of bold color and minimalist cut.",
+    "category": "clothes",
+    "image": "https://images.unsplash.com/photo-1654512697681-8434b50096dd"
+  },
+  {
+    "id": "15",
+    "title": "Classy Silk Shirt",
+    "price": 2699,
+    "description": "Elegant and lightweight for luxury wear.",
+    "category": "clothes",
+    "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157"
+  }
+]
