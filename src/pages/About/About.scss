@@ -115,3 +115,61 @@
         }
     }
 }
+
+
+
+
+
+@media screen and (max-width: 720px) {
+    .about-page {
+
+        .about-page-top,
+        .about-page-section-1,
+        .about-page-section-2,
+        .about-page-section-3,
+        .about-page-section-4 {
+            height: auto;
+            position: relative;
+            z-index: auto;
+        }
+
+        .about-page-top,
+        .about-page-section-2,
+        .about-page-section-4 {
+            img {
+                height: auto;
+                min-height: 300px;
+            }
+            
+        }
+
+        .about-page-section-1 {
+            padding: 2rem 1rem;
+
+            p {
+                width: 100%;
+                font-size: 1rem;
+            }
+        }
+
+        .about-page-section-3 {
+            flex-direction: column;
+            padding: 2rem 1rem;
+
+            p {
+                width: 100%;
+                padding: 1rem 0;
+                font-size: 1rem;
+            }
+
+            .about-page-section-3-div {
+                width: 100%;
+                height: auto;
+
+                .image {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
