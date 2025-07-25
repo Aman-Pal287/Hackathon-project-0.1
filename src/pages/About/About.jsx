@@ -1,6 +1,4 @@
 import img01 from "../About/img/img01.webp";
-import img04 from "../Home/images/04.jpg";
-import img05 from "../Home/images/05.jpg";
 import img06 from "../Home/images/12.webp";
 import img07 from "../Home/images/07.jpg";
 import img08 from "../Home/images/08.jpg";
