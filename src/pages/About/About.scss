@@ -1,0 +1,117 @@
+@import "../../styles/variables.scss";
+
+
+.about-page {
+    width: 100%;
+
+    .about-page-top {
+        width: 100%;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        z-index: -10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .about-page-section-1 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+        background-color: var(--bg-cream);
+        position: sticky;
+        top: 0;
+        z-index: -9;
+
+        p {
+            width: 50%;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: var(--text-color);
+            font-family: josfin-regular;
+            text-align: justify;
+        }
+    }
+
+    .about-page-section-2 {
+        width: 100%;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        z-index: -8;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .about-page-section-3 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--bg-cream);
+        position: sticky;
+        top: 0;
+        z-index: -7;
+
+        p {
+            padding: 5rem;
+            width: 50%;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: var(--text-color);
+            font-family: josfin-regular;
+            text-align: justify;
+        }
+
+        .about-page-section-3-div {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            .image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                background-color: red;
+            }
+        }
+    }
+
+    .about-page-section-4 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-cream);
+        position: sticky;
+        top: 0;
+        z-index: -6;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

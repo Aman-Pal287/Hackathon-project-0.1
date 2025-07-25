@@ -5,10 +5,15 @@ import "./Nav.scss";
 const Nav = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
+  const isAboutPage = location.pathname === "/about";
   const user = useSelector((state) => state.userReducer.users);
 
   return (
-    <nav className={`custom-navbar ${isHomePage ? "transparent-navbar" : ""}`}>
+    <nav
+      className={`custom-navbar ${
+        isHomePage || isAboutPage ? "transparent-navbar" : ""
+      }`}
+    >
       <h1>KStyle Studio</h1>
       <div className="nav-links">
         <NavLink

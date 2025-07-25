@@ -10,7 +10,7 @@ const PageNotFound = lazy(() => import("../pages/PageNotFound"));
 const Cart = lazy(() => import("../pages/Cart"));
 const Home = lazy(() => import("../pages/Home/Home"));
 import AuthWrapper from "./AuthWrapper";
-import About from "../pages/About";
+import About from "../pages/About/About";
 const Mainroutes = () => {
   return (
     <Routes>
