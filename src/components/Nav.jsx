@@ -23,7 +23,7 @@ const Nav = () => {
       <div className="navbar-header">
         <h1>KStyle Studio</h1>
         <div className="hamburger" onClick={toggleMenu}>
-          <i class="ri-menu-line"></i>
+          <i className={menuOpen ? "ri-close-line" : "ri-menu-line"}></i>
         </div>
       </div>
 

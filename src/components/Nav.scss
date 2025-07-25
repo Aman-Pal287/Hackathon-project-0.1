@@ -33,16 +33,9 @@
         cursor: pointer;
         gap: 5px;
 
-
-        .bar {
-            width: 25px;
-            height: 3px;
-            background-color: var(--text-dark);
-            transition: 0.4s;
-        }
-
-        .bar.open {
-            background-color: black;
+        &:hover::after,
+        &.active::after {
+            transform: scaleX(1); // Reveal on hover or active
         }
     }
 
@@ -103,7 +96,7 @@
         }
 
         .nav-links {
-            flex-direction: column;
+            flex-direction: row;
             width: 100%;
             display: none;
 
