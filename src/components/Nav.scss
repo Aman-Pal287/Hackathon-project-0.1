@@ -55,10 +55,11 @@
         flex-wrap: wrap;
 
         a {
+            position: relative; // needed for ::after
             font-family: josfin-thin;
             font-weight: 700;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: var(--text-dark);
             transition: all 0.3s ease;
 
@@ -66,14 +67,23 @@
                 color: #444;
             }
 
-            &.active::after {
+            // Animated underline
+            &::after {
                 content: "";
                 position: absolute;
                 bottom: -3px;
                 left: 0;
                 width: 100%;
                 height: 2px;
+                background-color: black;
+                transform: scaleX(0); // Start hidden
+                transform-origin: left; // Animate from left
+                transition: transform 0.3s ease;
+            }
 
+            &:hover::after,
+            &.active::after {
+                transform: scaleX(1); // Reveal on hover or active
             }
         }
     }
