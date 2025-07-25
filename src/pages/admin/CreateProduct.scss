@@ -1,0 +1,57 @@
+@import "../../styles/variables.scss";
+
+.create-product-form {
+    background: var(--bg-cream);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px var(--bg-black-15);
+    color: var(--text-black);
+    gap: 1.5rem;
+    margin: 10rem auto;
+    font-family: josfin, sans-serif;
+
+    input,
+    textarea {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid var(--border-black);
+        padding: 0.75rem 1rem;
+        font-size: 1.25rem;
+        color: var(--text-grey);
+        font-family: josfin-regular, sans-serif;
+        transition: all 0.3s ease;
+
+        &:focus {
+            outline: none;
+            border-color: var(--text-black);
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        &::placeholder {
+            color: #6b6b6b;
+        }
+    }
+
+    textarea {
+        resize: none;
+        min-height: 120px;
+    }
+
+    button {
+        background: linear-gradient(135deg, #000000, #4a4a4a);
+        color: var(--text-white);
+        padding: 0.75rem 2rem;
+        border-radius: 0.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        font-family: josfin-thin, sans-serif;
+
+        &:hover {
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #000000, #2e2e2e);
+        }
+    }
+}

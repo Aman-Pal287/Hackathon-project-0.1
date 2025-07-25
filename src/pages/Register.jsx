@@ -10,8 +10,9 @@ const Register = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const RegisterHandler = (user) => {
+    console.log(user);
     user.id = nanoid();
-    user.isAdmin = false;
+    user.isAdmin = user.isAdmin === "true"; // radio se string aata hai, convert to boolean
     user.cart = [];
     dispatch(asyncregisteruser(user));
     navigate("/login");
@@ -41,6 +42,25 @@ const Register = () => {
           type="password"
           placeholder="password *"
         />
+        <div className="radio-group">
+          <label className="radio-label-title">Is Admin?</label>
+          <div className="radio-options">
+            <label className="radio-option">
+              <input {...register("isAdmin")} type="radio" value="true" />
+              Yes
+            </label>
+            <label className="radio-option">
+              <input
+                {...register("isAdmin")}
+                type="radio"
+                value="false"
+                defaultChecked
+              />
+              No
+            </label>
+          </div>
+        </div>
+
         <button className="mt-5 px-4 py-2 bg-blue-400 rounded">
           Register User
         </button>

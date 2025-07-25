@@ -31,6 +31,7 @@
             position: relative;
             transition: all 0.3s ease-in-out;
             margin-left: 1rem;
+            color: var(--text-dark);
 
             &:hover {
                 color: #444;
@@ -57,5 +58,18 @@
             }
         }
 
+    }
+}
+
+
+
+
+.transparent-navbar {
+    background-color: transparent !important;
+    color: white;
+
+    h1,
+    .nav-links a {
+        color: white !important;
     }
 }

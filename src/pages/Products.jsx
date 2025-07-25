@@ -48,7 +48,15 @@ const Products = () => {
   // });
 
   return products.length > 0 ? (
-    <div className="products-container">{rederproduct}</div>
+    <>
+      <div className="products-container">
+        <div className="products-container-sort-filter">
+          <button className="products-sort-btn">Sort</button>
+          <button className="products-filter-btn">filter</button>
+        </div>
+        <div className="products-main-container">{rederproduct}</div>
+      </div>
+    </>
   ) : (
     "Loading..."
   );

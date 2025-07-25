@@ -33,7 +33,7 @@ const Login = () => {
           type="password"
           placeholder="password *"
         />
-        <button className="mt-5 px-4 py-2 bg-blue-400 rounded">
+        <button className=" mt-5 px-4 py-2 bg-blue-400 rounded">
           Login User
         </button>
         <p className="mt-5">

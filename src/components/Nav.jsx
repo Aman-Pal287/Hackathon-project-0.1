@@ -1,12 +1,14 @@
 import { useSelector } from "react-redux";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import "./Nav.scss";
 
 const Nav = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
   const user = useSelector((state) => state.userReducer.users);
 
   return (
-    <nav className="custom-navbar">
+    <nav className={`custom-navbar ${isHomePage ? "transparent-navbar" : ""}`}>
       <h1>KStyle Studio</h1>
       <div className="nav-links">
         <NavLink

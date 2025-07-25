@@ -1,107 +1,80 @@
+@import "../../styles/variables.scss";
+
+
 .user-profile-container {
-    max-width: 600px;
-    margin-top: 10rem;
-    margin-bottom: 5rem;
+    max-width: 500px;
+    margin: 0 auto;
     padding: 2rem;
-    background: #ffffff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: #fff;
     border-radius: 20px;
-    font-family: "Segoe UI", sans-serif;
-
-    h1 {
-        margin-bottom: 0.5rem;
-        font-weight: 300;
-
-        &:first-of-type {
-            font-size: 2.5rem;
-            color: #333;
-        }
-
-        &:last-of-type {
-            font-size: 1.25rem;
-            color: #666;
-        }
-    }
-
-    hr {
-        border: none;
-        border-top: 1px solid #ddd;
-        margin: 2rem 0;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
-        width: 100%;
-
-        input {
-            font-size: 1.5rem;
-            padding: 0.75rem 1rem;
-            border: none;
-            border-bottom: 2px solid #ccc;
-            transition: border-color 0.3s ease;
-
-            &:focus {
-                border-color: #3b82f6;
-                outline: none;
-            }
-        }
-
-        button {
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-weight: 600;
-            color: #fff;
-            cursor: pointer;
-            transition: background 0.3s ease;
-
-            &:nth-of-type(1) {
-                background-color: #3b82f6;
-
-                &:hover {
-                    background-color: #2563eb;
-                }
-            }
-
-            &:nth-of-type(2) {
-                background-color: #f97316;
-
-                &:hover {
-                    background-color: #ea580c;
-                }
-            }
-
-            &:nth-of-type(3) {
-                background-color: #ef4444;
-
-                &:hover {
-                    background-color: #dc2626;
-                }
-            }
-        }
-    }
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 12rem;
+    margin-bottom: 7rem;
 }
 
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
 
+.user-name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
 
-// Responsive
-@media (max-width: 768px) {
-    .user-profile-container {
-        padding: 1rem;
+.user-email {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
 
-        h1:first-of-type {
-            font-size: 2rem;
-        }
+.btn {
+    margin: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
 
-        form input {
-            font-size: 1.25rem;
-        }
+.logout-btn {
+    background-color: #3b82f6;
+    color: white;
+}
 
-        form button {
-            font-size: 0.9rem;
-        }
+.edit-btn {
+    background-color: #10b981;
+    color: white;
+}
+
+.update-btn {
+    background-color: #6366f1;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #ef4444;
+    color: white;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    input {
+        padding: 0.7rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        outline: none;
     }
 }

@@ -1,13 +1,72 @@
 @import "../../styles/variables.scss";
 
-.products-container {
+
+.products-sort-btn {
+    padding: 5px;
+    background-color: red;
+}
+
+
+.products-main-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.5rem;
     padding: 1rem;
     overflow-y: auto;
-    margin-top: 20rem;
+
+}
+
+
+.products-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem;
+    overflow-y: auto;
+    margin-top: 8rem;
+
+    .products-container-sort-filter {
+        margin-bottom: 1.5rem;
+        margin-left: 5rem;
+
+
+        .products-sort-btn {
+            padding: 0.5rem 1rem;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+            border: none;
+            font-family: josfin-thin;
+            font-weight: 700;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 1rem;
+
+            &:hover {
+                background-color: #aa5bec9d;
+            }
+        }
+
+        .products-filter-btn {
+            padding: 0.5rem 1rem;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+            border: none;
+            font-family: josfin-thin;
+            font-weight: 700;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 1rem;
+
+
+            &:hover {
+                background-color: #aa5bec9d;
+            }
+        }
+    }
+
 }
 
 .product-card {
@@ -53,8 +112,8 @@
         align-items: center;
 
         button {
-            background-color: #2d72d9;
-            color: white;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
             border: none;
             padding: 0.5rem 1rem;
             font-family: josfin-thin;
@@ -63,7 +122,7 @@
             cursor: pointer;
 
             &:hover {
-                background-color: #1a54b3;
+                background-color: #aa5bec9d;
             }
         }
     }

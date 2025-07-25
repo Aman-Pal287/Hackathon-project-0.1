@@ -10,8 +10,10 @@ import img08 from "./images/08.jpg";
 import img09 from "./images/09.webp";
 import img10 from "./images/10.webp";
 import heroVideo from "../../../public/hero_video/hero_video.mp4";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <section className="hero-section">
@@ -54,17 +56,17 @@ const Home = () => {
         <div className="home-section-3-card">
           <img src={img08} alt="" />
           <h1>New Arrivals</h1>
-          <p>Shop New Arrivals</p>
+          <p onClick={() => navigate("/products")}>Shop New Arrivals</p>
         </div>
         <div className="home-section-3-card">
           <img src={img09} alt="" />
-          <h1>New Arrivals</h1>
-          <p>Shop New Arrivals</p>
+          <h1>Ready to Wear</h1>
+          <p onClick={() => navigate("/products")}>Shop Ready to Wear</p>
         </div>
         <div className="home-section-3-card">
           <img src={img10} alt="" />
-          <h1>New Arrivals</h1>
-          <p>Shop New Arrivals</p>
+          <h1>Shop Dresses</h1>
+          <p onClick={() => navigate("/products")}>Shop Dresses</p>
         </div>
       </section>
 
