@@ -149,6 +149,11 @@
         flex: 1 1 calc(48% - 1rem); // 2 per row on tablets
         max-width: calc(48% - 1rem);
     }
+
+    .products-container {
+
+        margin-top: 12rem;
+    }
 }
 
 @media screen and (max-width: 480px) {

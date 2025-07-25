@@ -37,21 +37,52 @@ const ProductDetails = () => {
 
   return product ? (
     <>
-      <div className="product-detail-container w-full flex">
-        <img className="right" src={product.image} alt="" />
-        <div className="left">
-          <h1 className="">{product.title}</h1>
-          <h2 className="">${product.price}</h2>
-          <p className=" ">{product.description}</p>
-          <button>Add to cart</button>
+      <div className="product-detail-page">
+        <div className="product-gallery">
+          {product?.image && (
+            <img src={product.image} alt="" className="main-image" />
+          )}
+        </div>
+
+        <div className="product-info">
+          <h1>{product?.title}</h1>
+          <p className="price">${product?.price}</p>
+
+          <div className="size-selector">
+            <p>Size:</p>
+            <div className="sizes">
+              {["6", "8", "10", "12", "14"].map((size) => (
+                <button key={size}>{size}</button>
+              ))}
+            </div>
+          </div>
+
+          <button className="add-to-bag">Add to Bag</button>
+
+          <p className="description">{product?.description}</p>
+
+          <div className="other-colours">
+            <p>Other Colours</p>
+            <div className="swatches">
+              {Array.isArray(product?.variants) &&
+              product.variants.length > 0 ? (
+                product.variants.map((variant, idx) => (
+                  <img key={idx} src={variant.image} alt="" />
+                ))
+              ) : (
+                <span>No variants</span>
+              )}
+            </div>
+          </div>
         </div>
       </div>
       <hr />
       {users && users?.isAdmin && (
         <form
           onSubmit={handleSubmit(UpdateProductHandler)}
-          className="w-full flex flex-col justify-start items-start"
+          className="product-detail-admin-form w-full flex flex-col justify-start items-start"
         >
+          <h1>update</h1>
           <input
             {...register("image")}
             className="mb-3 outline-0 border-b p-2 text-4xl"
@@ -81,13 +112,13 @@ const ProductDetails = () => {
             type="text"
             placeholder="category"
           />
-          <button className="mt-5 px-4 py-2 bg-blue-400 rounded">
+          <button className="update-btn mt-5 px-4 py-2 bg-blue-400 rounded">
             Update Product
           </button>
           <button
             type="button"
             onClick={DeleteHandler}
-            className="mt-5 px-4 py-2 bg-red-400 rounded"
+            className="delete-btn mt-5 px-4 py-2 bg-red-400 rounded"
           >
             Delete Product
           </button>
