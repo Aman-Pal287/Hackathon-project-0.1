@@ -26,11 +26,26 @@
         p {
           font-family: josfin-regular;
           font-weight: 200;
-          font-size: 1.2rem;
+          font-size: 1rem;
           color: var(--text-grey);
           margin-bottom: 0.5rem;
           cursor: pointer;
           transition: all 0.3s ease-in-out;
+          outline: none;
+          border-style: none;
+
+          a {
+
+            font-family: josfin-regular;
+            font-weight: 200;
+            font-size: 1rem;
+            color: var(--text-grey);
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            outline: none;
+            border-style: none;
+          }
 
           &:hover {
             color: var(--text-black);

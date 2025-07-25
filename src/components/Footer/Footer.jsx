@@ -20,7 +20,7 @@ const Footer = () => {
             <h1>Help</h1>
             <ul>
               <p>Contact Us</p>
-              <p>Track Your Order</p> 
+              <p>Track Your Order</p>
               <p>FAQ's</p>
               <p>Depvery and Returns</p>
               <p>Size Guide</p>
@@ -38,9 +38,25 @@ const Footer = () => {
           <div className="footer-top-social footer-top-item">
             <h1>Social</h1>
             <ul>
-              <p>Instagram</p>
+              <p>
+                <a
+                  href="https://www.instagram.com/komalpandeyofficial/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </p>
               <p>Facebook</p>
-              <p>Youtube</p>
+              <p>
+                <a
+                  href="https://www.youtube.com/@komalpandey3894"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  youtube
+                </a>
+              </p>
             </ul>
           </div>
         </div>
