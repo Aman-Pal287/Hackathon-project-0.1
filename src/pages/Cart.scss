@@ -1,1 +1,149 @@
-@import "../styles/variables.scss"
+@import "../styles/variables.scss";
+
+:root {
+    --accent: #3b82f6;
+    --accent-dark: #2563eb;
+    --accent-light: #60a5fa;
+
+    --primary-bg: #ffffff;
+    --primary-text: #000000;
+    --card-bg: #f5f5f5;
+}
+
+[data-theme="dark"] {
+    --primary-bg: #121212;
+    --primary-text: #f0f0f0;
+    --card-bg: #2d2d2d;
+    --accent: #60a5fa;
+    --accent-dark: #3b82f6;
+}
+
+.cart-container {
+    margin-top: 8rem;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    padding: 2rem;
+    min-height: 100vh;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        font-family: josfin-regular, ;
+    }
+
+    li {
+        background-color: var(--card-bg);
+        color: var(--primary-text);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease;
+        font-size: 1.25rem;
+    }
+
+    img {
+        width: 7vmax;
+        height: 7vmax;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .quantity-control {
+        display: flex;
+        align-items: center;
+
+        button {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.3rem 0.8rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: var(--accent-dark);
+            }
+        }
+
+        span {
+            margin: 0 1rem;
+            padding: 0.5rem;
+            background-color: var(--primary-bg);
+            border-radius: 5px;
+            min-width: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+
+
+.empty-cart {
+    text-align: center;
+    padding: 3rem;
+
+    h2 {
+        color: var(--accent);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        background-color: var(--accent);
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border: none;
+        font-size: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: var(--accent-dark);
+        }
+    }
+}
+
+.confirm-dialog {
+    position: absolute;
+    background-color: white;
+    color: #333;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+
+    p {
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    button {
+        margin: 0 0.5rem;
+        padding: 0.4rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+
+        &:first-child {
+            background-color: red;
+            color: white;
+        }
+
+        &:last-child {
+            background-color: #ddd;
+        }
+    }
+}
